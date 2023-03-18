@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/background-branco-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main{
+    margin-top: 15vh;
+  }
+  .menu-nav a,ul,li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 9px;
+    font-size: 28px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-bottom: black;
+  }
+  .menu-nav{
+    border-bottom: 160px;
+    border: 16px;
+  }
+  .menu-nav a:hover{
+    color: #b6945d;
+  }
+  main{
+    margin-top: 15vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #999;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  label {
+    display: flex;
+    gap: 30px;
+    color: #666;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  #error {
+    color: #ff0000;
+    margin-top: 10px;
+  }
+  
+  #success {
+    color: #4CAF50;
+    margin-top: 10px;
+  }
+  #mensagem{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .footer{
+    margin-top: 16vh;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 5vh;
+    
+  }
+  .footer a{
+    color: black;
+    text-decoration: none;
+  }
+  .footer a:hover{
+    color: #b6945d;
+  }

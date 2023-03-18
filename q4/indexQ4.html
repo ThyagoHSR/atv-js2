@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu-nav">
+            <ul>
+                <img src="/img/marca220x91.png" alt="">
+                <li><a href="/q1/index.html">Q1</a></li>
+                <li><a href="/q2/indexQ2.html">Q2</a></li>
+                <li><a href="/q3/indexQ3.html">Q3</a></li>
+                <li><a href="/q4/indexQ4.html">Q4</a></li>
+                <li><a href="/q5/indexq5.html">Q5</a></li>
+                <li><a href="/q6/indexq6.html">Q6</a></li>
+                <li><a href="/q7/indexq7.html">Q7</a></li>
+                <li><a href="/q8/indexq8.html">Q8</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="container">
+	<form style="margin-top: 50px;">
+        <h1>População dos países</h1>
+		<label style="margin-top: 30px;" for="popA">População do país A:</label>
+		<input type="number" id="popA" name="popA" required>
+		<label for="taxaA">Taxa de crescimento anual do país A (%):</label>
+		<input type="number" id="taxaA" name="taxaA" required>
+		<label for="popB">População do país B:</label>
+		<input type="number" id="popB" name="popB" required>
+		<label for="taxaB">Taxa de crescimento anual do país B (%):</label>
+		<input type="number" id="taxaB" name="taxaB" required>
+        <center>
+		<button type="button" onclick="calcular()">Calcular</button>
+        </center>
+	</form>
+	<div id="resultado"></div>
+</div>
+</main>
+<footer class="footer">Created by <a href="https://github.com/ThyagoHSR" target="_blank">ThyagoHSR</a> | © 2023 Todos os direitos reservados.</footer>
+<script>
+    function calcular() {
+        // Obtém os valores dos inputs
+        const popA = parseInt(document.getElementById("popA").value);
+        const taxaA = parseFloat(document.getElementById("taxaA").value) / 100;
+        const popB = parseInt(document.getElementById("popB").value);
+        const taxaB = parseFloat(document.getElementById("taxaB").value) / 100;
+      
+        // Validação dos valores
+        if (isNaN(popA) || isNaN(taxaA) || isNaN(popB) || isNaN(taxaB)) {
+          document.getElementById("resultado").innerHTML = "Por favor, preencha todos os campos corretamente.";
+          return;
+        }
+      
+        // Cálculo do tempo necessário para que a população de A ultrapasse B
+        let anos = 0;
+        while (popA < popB) {
+          popA += popA * taxaA;
+          popB += popB * taxaB;
+          anos++;
+        }
+      
+        // Exibição do resultado
+        document.getElementById("resultado").innerHTML = `A população de A ultrapassará a população de B em ${anos} anos.`;
+    }
+    </script>
+</body>
+</html>

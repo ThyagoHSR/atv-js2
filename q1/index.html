@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ATV JavaScript</title>
+    <meta name="description" content="Atv Javascript Unicap">
+    <link rel="shortcut icon" href="/img/marca220x91.png" type="image/x-icon">
+    <title>Validação de Nota</title>
+  </head>
+
+  <body>
+    <header>
+        <nav class="menu-nav">
+            <ul>
+                <img src="/img/marca220x91.png" alt="">
+                <li><a href="/q1/index.html">Q1</a></li>
+                <li><a href="/q2/indexQ2.html">Q2</a></li>
+                <li><a href="/q3/indexQ3.html">Q3</a></li>
+                <li><a href="/q4/indexQ4.html">Q4</a></li>
+                <li><a href="/q5/indexq5.html">Q5</a></li>
+                <li><a href="/q6/indexq6.html">Q6</a></li>
+                <li><a href="/q7/indexq7.html">Q7</a></li>
+                <li><a href="/q8/indexq8.html">Q8</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+          <div class="container">
+          <h1>Validação de Nota</h1>
+          <form>
+          <div class="form-group">
+          <label for="nota">Digite a sua Nota :</label>
+          <input type="number" id="nota" name="nota" min="0" max="10" step="0.1" required>
+          </div>
+          <div class="form-group">
+          <button type="submit">Verificar Nota</button>
+          </div>
+          </form>
+          <div id="resultado"></div>
+          </div>
+          <script src="validacao-nota.js"></script>
+          </main>
+
+          <footer class="footer">Created by <a href="https://github.com/ThyagoHSR" target="_blank">ThyagoHSR</a> | © 2023 Todos os direitos reservados.</footer>
+  </body>
+</html>
